@@ -7,7 +7,7 @@ import VideoCarousel from './VideoCarousel';
 const Highlights = () => {
   useGSAP(() => {
     gsap.to('#title', { opacity: 1, y: 0 })
-    gsap.to('.link', { opacity: 1, y: 0, duration: 1, stagger: 0.25 })
+    gsap.to('.link', { opacity: 1, y: 0, duration: 1, stagger: 0.25 }) // stagger ensures all the link classes stagger one after another 
   }, [])
 
   return (
@@ -28,7 +28,8 @@ const Highlights = () => {
           </div>
         </div>
 
-        <VideoCarousel />
+        <VideoCarousel // the video carousel component imported
+        /> 
       </div>
     </section>
   )
